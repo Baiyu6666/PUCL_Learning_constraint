@@ -1,11 +1,9 @@
-numpy==1.17.5
+numpy==1.23.3
 scipy==1.8.1
 pandas==1.3.5
 gym==0.15.7
 matplotlib==3.3.2
 seaborn==0.12.0
-torch==1.12.0+cu113
-torchvision==0.13.0+cu113
 wandb==0.18.2
 pybullet==3.2.5
 cvxpy==1.5.2
@@ -19,3 +17,10 @@ fast-histogram==0.11
 pandas
 pillow
 mpl-scatter-density
+pyvista
+scikit-learn
+mujoco-py==2.0.2.13
+torch==1.12.0
+torchvision==0.13.0
+cython==0.29.32
+

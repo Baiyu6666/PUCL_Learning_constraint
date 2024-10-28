@@ -11,16 +11,8 @@ if __name__ == "__main__":
     # passed via command line
     if file_to_run == "pucl":
         from icrl.pucl import main
-    elif file_to_run == "icrl":
-        from icrl.icrl_main import main
     elif file_to_run == "dscl":
         from icrl.dscl import main
-    elif file_to_run == "lpvdscl":
-        from icrl.lpvdscl import main
-    elif file_to_run == "acl":
-        from icrl.acl import main
-    elif file_to_run == "ppo-main":
-        from icrl.ppo_main import main
     elif file_to_run == "run_policy":
         from icrl.run_policy import main
     else:

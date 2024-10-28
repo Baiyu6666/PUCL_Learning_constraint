@@ -8,7 +8,6 @@ It's highly recommended to use Python 3.8.
 ```bash
 pip install -r requirements.txt
 pip install -e ./custom_envs 
-pip install -e ./gym_panda
 ```
 
 In addition, you will need to setup a (free) [wandb](www.wandb.ai) account. 
@@ -82,9 +81,12 @@ python run_me.py pucl -g HC_gpu -tei HCWithPos-v0 -eei HCWithPosTest-v0 -ep icrl
 ```bash
 # Learn constraint 
 python run_me.py dscl -g test -cl 16 16 -ni 18 -clr 0.005 -dno -dnc -dnr -tei ReachConcaveObs-v0 -eei ReachConcaveObs-v0 -ep icrl/expert_data/ReachConcaveObsDS -cosd 0 1 2 -bi 400 -cpe 1 -er 44 -d cuda:0 -cbs 256 -twm -kNNt 0.029 -dmwr -spe -aret -dmr 2
-```
+
 # Transfer learned constraint network and generate policy rollouts
-Please check ds_policy.py and plots/render_reach_env_bullet.py
+# Please check ds_policy.py and plots/render_reach_env_bullet.py
+
+``` 
+
 
 
 

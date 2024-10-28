@@ -173,7 +173,7 @@ def dscl(config):
             plot_constraints(plot_cost_function, config.cn_manual_threshold, None, None, config.eval_env_id,
                              config.cn_obs_select_dim, obs_dim, acs_dim,
                              os.path.join(cn_plot_dir, '%d.png' % (itr + 1)), f'DSCL iter {itr + 1}', expert_obs, None,
-                             None, obs_nominal=nominal_obs, rew_nominal=None, len_nominal=None,
+                             expert_lengths, obs_nominal=nominal_obs, rew_nominal=None, len_nominal=nominal_len,
                              policy_excerpt_rollout_num=None, obs_failed=None, obs_rn=rn_nominal_obs, gmm_learned=None,
                              query_obs=None, show=config.show_figures,
                              grad_function=constraint_net.build_gamma_with_grad_for_ds)

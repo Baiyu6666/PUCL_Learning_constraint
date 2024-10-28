@@ -6,10 +6,8 @@ import matplotlib.pyplot as plt
 
 from icrl.true_constraint_net import get_true_cost_function
 from icrl.utils import make_eval_env, del_and_make, save_dict_as_pkl, sample_from_agent
-from icrl.constraint_net import plot_constraints
-from constraint_net import ConstraintNet
-from ds.src.lpvds_class import lpvds_class
-from utils import load_expert_data, sample_trajectories_for_reach_env
+from icrl.constraint_net import plot_constraints, ConstraintNet
+from icrl.utils import load_expert_data, sample_trajectories_for_reach_env
 import matplotlib
 
 matplotlib.use('TKAgg')
