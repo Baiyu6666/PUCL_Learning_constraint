@@ -1,0 +1,423 @@
+wandb_version: 1
+
+file_to_run:
+  desc: null
+  value: icrl-pointellip
+config_file:
+  desc: null
+  value: null
+project:
+  desc: null
+  value: ICRL-FE2
+name:
+  desc: null
+  value: PointEllip-v0_PointEllipTest-v0_ec_0.005_ft_200000_lr_0.0003_lpi_5_nis_True_pfv_0_um_True_s_23_sid_-1
+group:
+  desc: null
+  value: PointEllip
+device:
+  desc: null
+  value: cpu
+verbose:
+  desc: null
+  value: 0
+sync_wandb:
+  desc: null
+  value: false
+wandb_sweep:
+  desc: null
+  value: false
+debug_mode:
+  desc: null
+  value: false
+loading_policy:
+  desc: null
+  value: true
+loading_policy_dir:
+  desc: null
+  value: run-20240523_173419-247kugb0
+loading_policy_ite:
+  desc: null
+  value: '5'
+loading_constraint:
+  desc: null
+  value: false
+loading_constraint_dir:
+  desc: null
+  value: null
+loading_constraint_ite:
+  desc: null
+  value: null
+table_function:
+  desc: null
+  value: false
+train_env_id:
+  desc: null
+  value: PointEllip-v0
+eval_env_id:
+  desc: null
+  value: PointEllipTest-v0
+dont_normalize_obs:
+  desc: null
+  value: true
+dont_normalize_reward:
+  desc: null
+  value: true
+dont_normalize_cost:
+  desc: null
+  value: true
+seed:
+  desc: null
+  value: 23
+clip_obs:
+  desc: null
+  value: 20
+cost_info_str:
+  desc: null
+  value: cost
+policy_name:
+  desc: null
+  value: TwoCriticsMlpPolicy
+shared_layers:
+  desc: null
+  value: null
+policy_layers:
+  desc: null
+  value:
+  - 64
+  - 64
+reward_vf_layers:
+  desc: null
+  value:
+  - 64
+  - 64
+cost_vf_layers:
+  desc: null
+  value:
+  - 64
+  - 64
+n_steps:
+  desc: null
+  value: 250
+batch_size:
+  desc: null
+  value: 128
+n_epochs:
+  desc: null
+  value: 10
+num_threads:
+  desc: null
+  value: 12
+save_every:
+  desc: null
+  value: 2
+eval_every:
+  desc: null
+  value: 5
+train_to_high_reward:
+  desc: null
+  value: false
+reward_gamma:
+  desc: null
+  value: 0.99
+reward_gae_lambda:
+  desc: null
+  value: 0.95
+cost_gamma:
+  desc: null
+  value: 0.99
+cost_gae_lambda:
+  desc: null
+  value: 0.95
+clip_range:
+  desc: null
+  value: 0.2
+clip_range_reward_vf:
+  desc: null
+  value: null
+clip_range_cost_vf:
+  desc: null
+  value: null
+ent_coef:
+  desc: null
+  value: 0.005
+reward_vf_coef:
+  desc: null
+  value: 0.5
+cost_vf_coef:
+  desc: null
+  value: 0.5
+target_kl:
+  desc: null
+  value: 0.01
+max_grad_norm:
+  desc: null
+  value: 0.5
+learning_rate:
+  desc: null
+  value: 0.0003
+use_pid:
+  desc: null
+  value: false
+penalty_initial_value:
+  desc: null
+  value: 1
+budget:
+  desc: null
+  value: 0.0001
+update_penalty_after:
+  desc: null
+  value: 1
+proportional_control_coeff:
+  desc: null
+  value: 10
+derivative_control_coeff:
+  desc: null
+  value: 0
+integral_control_coeff:
+  desc: null
+  value: 0.0001
+proportional_cost_ema_alpha:
+  desc: null
+  value: 0.5
+derivative_cost_ema_alpha:
+  desc: null
+  value: 0.5
+pid_delay:
+  desc: null
+  value: 1
+penalty_learning_rate:
+  desc: null
+  value: 0.2
+penalty_fixed_value:
+  desc: null
+  value: 0.0
+use_sde:
+  desc: null
+  value: false
+sde_sample_freq:
+  desc: null
+  value: -1
+use_curiosity_driven_exploration:
+  desc: null
+  value: false
+train_gail_lambda:
+  desc: null
+  value: false
+n_iters:
+  desc: null
+  value: 20
+warmup_timesteps:
+  desc: null
+  value: null
+forward_timesteps:
+  desc: null
+  value: 200000
+backward_iters:
+  desc: null
+  value: 500
+backward_iters_extra:
+  desc: null
+  value: 1
+rollouts_per_demonstration:
+  desc: null
+  value: 1
+forward_iters:
+  desc: null
+  value: 1
+no_importance_sampling:
+  desc: null
+  value: true
+per_step_importance_sampling:
+  desc: null
+  value: false
+reset_policy:
+  desc: null
+  value: false
+cn_layers:
+  desc: null
+  value:
+  - 4
+anneal_clr_by_factor:
+  desc: null
+  value: 1.0
+cn_learning_rate:
+  desc: null
+  value: 0.03
+cn_reg_coeff:
+  desc: null
+  value: 0.0
+cn_batch_size:
+  desc: null
+  value: null
+cn_obs_select_dim:
+  desc: null
+  value:
+  - 0
+  - 1
+cn_acs_select_dim:
+  desc: null
+  value:
+  - -1
+cn_plot_every:
+  desc: null
+  value: 1
+cn_normalize:
+  desc: null
+  value: false
+cn_target_kl_old_new:
+  desc: null
+  value: 10
+cn_target_kl_new_old:
+  desc: null
+  value: 100
+cn_eps:
+  desc: null
+  value: 1.0e-05
+cn_loss_type:
+  desc: null
+  value: bce
+cn_sbce_coe:
+  desc: null
+  value: 0.43
+cn_manual_threshold:
+  desc: null
+  value: 0.5
+cn_weight_expert_loss:
+  desc: null
+  value: 1.0
+cn_weight_nominal_loss:
+  desc: null
+  value: 1.0
+expert_path:
+  desc: null
+  value: icrl/expert_data/PointEllip
+expert_rollouts:
+  desc: null
+  value: 20
+refine_iterations:
+  desc: null
+  value: 1
+rn_decision_method:
+  desc: null
+  value: kNN
+kNN_k:
+  desc: null
+  value: 1
+kNN_thresh:
+  desc: null
+  value: 0.12
+CPU_n_gmm_k:
+  desc: null
+  value: 20
+CPU_ratio_thresh:
+  desc: null
+  value: 0.8
+GPU_n_gmm:
+  desc: null
+  value: 30
+GPU_likelihood_thresh:
+  desc: null
+  value: -5
+WB_label_frequency:
+  desc: null
+  value: 0.1
+add_rn_each_traj:
+  desc: null
+  value: false
+add_boundary_data:
+  desc: null
+  value: false
+angle_diff_thresh:
+  desc: null
+  value: 20
+use_gmm_density_estimation:
+  desc: null
+  value: false
+gmm_components_num:
+  desc: null
+  value: 8
+gmm_test_size:
+  desc: null
+  value: 0.1
+gmm_covariance_type:
+  desc: null
+  value: full
+gmm_init_method:
+  desc: null
+  value: kmeans
+gmm_init_iter:
+  desc: null
+  value: 10
+gmm_iter_max:
+  desc: null
+  value: 1000
+gmm_tol:
+  desc: null
+  value: 0.001
+kl_divergence_update_threshold:
+  desc: null
+  value: 0.01
+kl_divergence_absolute_threshold:
+  desc: null
+  value: 1.2
+kl_divergence_samples_num:
+  desc: null
+  value: 100000.0
+action_clip_value:
+  desc: null
+  value: 0.25
+position_limit:
+  desc: null
+  value: 13.0
+use_true_constraint:
+  desc: null
+  value: false
+use_wandb:
+  desc: null
+  value: true
+use_memory:
+  desc: null
+  value: true
+recording_fraction:
+  desc: null
+  value: 2
+select_policy_excerpts:
+  desc: null
+  value: false
+evaluation_episode_num:
+  desc: null
+  value: 20
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.13
+    cli_version: 0.17.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716483725
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 19
+      - 23
+      4: 3.8.13
+      5: 0.17.0
+      8:
+      - 5
+      13: linux-x86_64
+save_dir:
+  desc: null
+  value: ./icrl/wandb/run-20240523_190205-8z00tfj3/files

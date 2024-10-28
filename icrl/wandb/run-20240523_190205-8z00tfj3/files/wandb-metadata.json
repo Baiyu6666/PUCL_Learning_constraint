@@ -1,0 +1,202 @@
+{
+    "os": "Linux-5.15.0-94-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-05-23T17:02:05.915803",
+    "startedAt": "2024-05-23T17:02:05.279599",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "icrl-pointellip",
+        "-g",
+        "PointEllip",
+        "-nis",
+        "-lr",
+        "3e-4",
+        "-pfv",
+        "0",
+        "-fi",
+        "1",
+        "-ft",
+        "2e5",
+        "-ni",
+        "20",
+        "-clr",
+        "0.03",
+        "-ec",
+        "0.005",
+        "-dno",
+        "-dnc",
+        "-dnr",
+        "-tei",
+        "PointEllip-v0",
+        "-eei",
+        "PointEllipTest-v0",
+        "-lpd",
+        "run-20240523_173419-247kugb0",
+        "-lp",
+        "-lpi",
+        "5",
+        "-ep",
+        "icrl/expert_data/PointEllip",
+        "-um"
+    ],
+    "state": "running",
+    "program": "/home/baiyu/PycharmProjects/icrl-master/run_me.py",
+    "codePathLocal": "run_me.py",
+    "codePath": "run_me.py",
+    "git": {
+        "remote": "https://github.com/epfl-lasa/ICRL",
+        "commit": "fe4808dd898df03d207ede9d8ef3001a8b0c7f12"
+    },
+    "email": "baiyu.peng@epfl.ch",
+    "root": "/home/baiyu/PycharmProjects/icrl-master",
+    "host": "xps",
+    "username": "baiyu",
+    "executable": "/home/baiyu/miniconda3/envs/icrl/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3.1168750000000016,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1.205,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 72.78396224975586,
+            "used": 61.34286880493164
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8361213952
+        }
+    ],
+    "memory": {
+        "total": 31.069103240966797
+    }
+}
