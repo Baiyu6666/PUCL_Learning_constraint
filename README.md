@@ -1,7 +1,5 @@
 
-This repository contains the code for the paper "Positive-Unlabeled Constraint Learning (PUCL) for Inferring Nonlinear Continuous Constraint Functions from Expert Demonstrations" [[link]](https://arxiv.org/abs/2408.01622). This method leverages Positive-Unlabeled learning techniques to infer implicit constraints from demonstrations, allowing robust and efficient learning of constraint functions in continuous state-action spaces.
-
-This repository is based on the code of Inverse Constrained Reinforcement Learning (ICML 2021) [link] with customized gym environments.
+This repository contains the code for the paper "Positive-Unlabeled Constraint Learning (PUCL) for Inferring Nonlinear Continuous Constraint Functions from Expert Demonstrations" [[link]](https://arxiv.org/abs/2408.01622). This method leverages Positive-Unlabeled learning techniques to infer implicit constraints from demonstrations, allowing robust and efficient learning of constraint functions in continuous state-action spaces. This repository is based on the code of Inverse Constrained Reinforcement Learning (ICML 2021).
 ## Code Dependency
 
 It's highly recommended to use Python 3.8. 
@@ -29,8 +27,10 @@ python run_me.py pucl -g test -lr 3e-4 -piv 10 -ft 3e4 -ni 40 -clr 0.003 -ec 0.0
 
 # GPUCL
 python run_me.py pucl -g test -tei PointEllip-v0 -eei PointEllipTest-v0 -ep icrl/expert_data/PointEllip -nis -lr 3e-4 -piv 10 -ft 3e4 -ni 40 -clr 0.003 -ec 0.01 -kp 1 -ki 0.1 -upid -lpd run-20240523_190205-8z00tfj3 -lpi 15 -lp -dnr -dnc -dno -spe -um -cl 32 32 -ee 3 -rdm GPU -GPUlt -6 -GPUng 7
+
+# Note that to save training time, all four algorithms starts from a pre-trained unconstrained policy. 
 ```
-# Note that to save training time, all four algorithms starts from a pre-trained unconstrained policy.
+
 
 
 ### 3D reach with position constraint 
